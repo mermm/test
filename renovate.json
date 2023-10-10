@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "github>openfun/renovate-configuration"
+  ],
+  "ignorePaths": ["cookiecutter/**"],
+  "packageRules": [
+    {
+      "enabled": false,
+      "groupName": "ignored js dependencies",
+      "matchManagers": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "bootstrap",
+        "node-fetch",
+        "typescript"
+      ]
+    },
+    {
+      "enabled": false,
+      "groupName": "ignored python dependencies",
+      "matchManagers": [
+        "setup-cfg"
+      ],
+      "matchPackageNames": [
+        "Django",
+        "elasticsearch",
+        "pylint"
+      ]
+    }
+  ]
+}
